@@ -6,15 +6,129 @@
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="author" content="Ahmad Aldabouqi">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Home|Ahmad Aldabouqi</title>
 </head>
 <body>
     <header>
-        <nav></nav>
+        <nav>
+            <ul class="logo">
+                <li> <a href="#"> &lt;/AD&gt; </a> </li>
+            </ul>
+            <ul class="nav-list">
+                <li><i class="fa fa-envelope icon"></i>aldabouqiahmad@gmail.com</li>
+                <li><i class="fa fa-light fa-phone icon"></i>+962777753269</li>
+                <li><i class="fa fa-light fa-location-dot"></i> Amman|Jordan</li>
+                <!-- <li><i class="fa fa-brands fa-linkedin"></i><a href="https://www.linkedin.com/in/ahmad-aldabouqi/">Ahmad Al-Dabouqi</a></li> -->
+            </ul>
+        </nav>
     </header>
-    <main></main>
+    <main>
+        <section class="section-1-img">
+            <div class="box">
+                <h1>Hey, I'm Ahmad</h1>
+                <h2>Full-stack Developer.</h2>
+            </div>
+        </section>
+        <section class="section-2-skills">
+            <h1>My Experience</h1>
+            <h2>Specialist in need. Generalist at heart.</h2>
+            <div class="row">
+                <div class="frontEnd-skills">
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h3>Front-end</h3>
+                    <ul>
+                        <li>html(5)</li>
+                        <li>css(3)</li>
+                        <li>Javascript</li>
+                        <li>Bootstrap</li>
+                        <li>Semantics-UI</li>
+                    </ul>
+                </div>
+                <div class="backend-skills">
+                    <i class="fa-solid fa-server"></i>
+                    <h3>Back-end</h3>
+                    <ul>
+                        <li>SQL</li>
+                        <li>PYTHON</li>
+                    </ul>
+                </div>
+                <div class="tools-skills">
+                    <i class="fa-solid fa-star"></i>
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Git || Github</li>
+                        <li>vs code || Atom</li>
+                        <li>adobe</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="previous-work">
+            <h2>Work</h2>
+            <h2>Here are few of my previous projects.</h2>
+            <div class="container">
+                <div class="right">
+                    <img src="./img/vaccine-site.png" alt="">
+                </div>
+                <div class="left">
+                    <h3>Vaccines Registration</h3>
+                    <p class="platform">Web</p>
+                    <p class="icons">
+                        <i class="fa-solid fa-desktop"></i>
+                        <i class="fa-solid fa-tablet-screen-button"></i>
+                        <i class="fa-solid fa-mobile"></i>
+                    </p>
+                    <p class="description">
+                        Informative website for registration to take one of the covid-19 Vaccines. The admin can cancel any order and show all orders.
+                    </p>
+                    <a class="btn" target="_blank" href="https://leicester-team.github.io/vaccines-regesiteration/">Visit Website</a>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="right">
+                    <img src="./img/bankist-app.png" alt="">
+                </div>
+                <div class="left">
+                    <h3>Bankist App</h3>
+                    <p class="platform">Web</p>
+                    <p class="icons">
+                        <i class="fa-solid fa-desktop"></i>
+                        <i class="fa-solid fa-tablet-screen-button"></i>
+                        <i class="fa-solid fa-mobile"></i>
+                    </p>
+                    <p class="description">
+                        a Minimalist Banking app using Vanilla Js with the functionality of users: loan, balance, and transfers.                    </p>
+                    <a class="btn" target="_blank" href="https://ahmadaldabouqii.github.io/Bankist_App/">Visit Website</a>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="right">
+                    <img src="./img/pig-game.png" alt="">
+                </div>
+                <div class="left">
+                    <h3>Pig Game</h3>
+                    <p class="platform">Web</p>
+                    <p class="icons">
+                        <i class="fa-solid fa-desktop"></i>
+                        <i class="fa-solid fa-tablet-screen-button"></i>
+                        <i class="fa-solid fa-mobile"></i>
+                    </p>
+                    <p class="description">
+                        Pig game is a simple dice roll-based game. This game is fully in javascript and uses some images.</p>
+                    <a class="btn" target="_blank" href="https://ahmadaldabouqii.github.io/Pig_Game/">Visit Website</a>
+                </div>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 </html>
