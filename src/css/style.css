@@ -345,6 +345,27 @@ cite {
   line-height: 4;
 }
 
+footer {
+  background-color: rgba(255, 103, 68, 0.91);
+  padding: 3em;
+  text-align: center;
+}
+
+.social {
+  line-height: 4;
+}
+
+footer i {
+  font-size: 1.5em;
+  padding: 0 0.2em 0 0;
+}
+
+footer p {
+  word-spacing: 0.2em;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
 @media all and (min-width: 700px) {
   nav {
     display: flex;
