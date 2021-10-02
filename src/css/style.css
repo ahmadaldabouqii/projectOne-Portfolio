@@ -161,7 +161,8 @@ nav .logo li a {
 }
 
 .previous-work h2:first-child,
-.services-section h1 {
+.services-section h1,
+.testimonials-section h1 {
   color: rgb(255, 105, 69);
   margin-bottom: 0.7em;
   line-height: 1.4;
@@ -279,7 +280,6 @@ nav .logo li a {
 }
 
 .services {
-  /* padding: 2em; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -308,7 +308,41 @@ nav .logo li a {
   font-size: 3em;
 }
 
-@media all and (min-width: 400px) and (max-width: 600px) {
+.testimonials-section {
+  padding: 3em;
+  text-align: center;
+}
+
+.testimonials-section h1 {
+  font-size: 3em;
+}
+
+.person {
+  text-align: center;
+  line-height: 1.5;
+  background-color: #e9eff5;
+  border-radius: 2em;
+  padding: 1.5em;
+  margin: 1em;
+  border-bottom: 3px #007bff solid;
+}
+
+.person p {
+  font-size: 1.3em;
+}
+
+.img-holder {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1em auto;
+}
+
+cite {
+  color: #868e96;
+  font-style: italic;
+  line-height: 4;
 }
 
 @media all and (min-width: 700px) {
@@ -390,6 +424,15 @@ nav .logo li a {
   .services {
     flex-direction: row;
     justify-content: center;
+  }
+
+  .holder-testimonials {
+    display: flex;
+    justify-content: center;
+  }
+
+  .person {
+    max-width: 25%;
   }
 }
 
