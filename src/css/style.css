@@ -1,11 +1,11 @@
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: rubik, sans-serif;
   box-sizing: border-box;
 }
 
 body {
   overflow-x: hidden;
-  background-color: #ffffff;
+  background-color: #f9f9f9;
   color: #111;
 }
 
@@ -41,14 +41,15 @@ nav .logo li a {
   text-decoration: none;
   font-size: 3em;
   color: rgba(252, 76, 36, 0.91);
+  font-family: rubik, sans-serif;
 }
 
 .nav-list li {
   color: #111111;
-  font-family: 'Oswald', Helvetica, Arial, sans-serif;
-  font-weight: 500;
+  font-family: rubik, sans-serif;
+  font-weight: 600;
   text-decoration: none;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.06em;
   padding: 0.5em 0;
   text-align: center;
   border-bottom: 1px solid black;
@@ -79,13 +80,14 @@ nav .logo li a {
   color: #ffffff;
   font-size: 3em;
   line-height: 1.5;
-  opacity: 0.7;
+  opacity: 0.5;
+  font-weight: 700;
 }
 
 .box h2 {
   color: #ffffff;
   font-size: 2em;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 /* <-- section 2 -->  */
@@ -155,9 +157,11 @@ nav .logo li a {
 .previous-work {
   padding: 6em 4em 3em;
   text-align: center;
+  padding-bottom: 0;
 }
 
-.previous-work h2:first-child {
+.previous-work h2:first-child,
+.services-section h1 {
   color: rgb(255, 105, 69);
   margin-bottom: 0.7em;
   line-height: 1.4;
@@ -268,6 +272,42 @@ nav .logo li a {
   color: #fff;
 }
 
+.services-section {
+  padding: 3em;
+  text-align: center;
+  background-color: blueviolet;
+}
+
+.services {
+  /* padding: 2em; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.holder {
+  color: #f9f9f9;
+  width: 10em;
+  padding: 2em;
+  background-color: black;
+  height: 20vh;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.5em;
+  font-size: 1.3em;
+}
+
+.holder i {
+  font-size: 2.5em;
+}
+
+.services-section h1 {
+  font-size: 3em;
+}
+
 @media all and (min-width: 400px) and (max-width: 600px) {
 }
 
@@ -329,12 +369,13 @@ nav .logo li a {
 }
 
 @media all and (min-width: 850px) {
-  .nav-list li {
-    font-size: 1.3em;
+  header {
+    position: fixed;
+    box-shadow: 0 5px 10px rgb(17 17 17 / 30%);
   }
 
   .previous-work h2:first-child {
-    font-size: 2.2em;
+    font-size: 3em;
     font-weight: 900;
   }
 
@@ -343,7 +384,12 @@ nav .logo li a {
   }
 
   .left h3 {
-    font-size: 1.9375rem;
+    font-size: 1.6em;
+  }
+
+  .services {
+    flex-direction: row;
+    justify-content: center;
   }
 }
 
