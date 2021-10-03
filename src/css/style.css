@@ -26,6 +26,16 @@ nav {
   align-items: center;
 }
 
+nav .nav-list li {
+  color: #111111;
+  font-family: rubik, sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.06em;
+  padding: 0.5em 0;
+  text-align: center;
+}
+
 nav .nav-list i {
   margin: 0 0.6em 0 0;
 }
@@ -42,17 +52,6 @@ nav .logo li a {
   font-size: 3em;
   color: rgba(252, 76, 36, 0.91);
   font-family: rubik, sans-serif;
-}
-
-.nav-list li {
-  color: #111111;
-  font-family: rubik, sans-serif;
-  font-weight: 600;
-  text-decoration: none;
-  letter-spacing: 0.06em;
-  padding: 0.5em 0;
-  text-align: center;
-  border-bottom: 1px solid black;
 }
 
 .nav-list li img {
@@ -169,6 +168,10 @@ nav .logo li a {
   margin-top: 0;
   font-weight: 900;
   font-size: 1.6em;
+}
+
+.previous-work h2:first-child {
+  font-size: 3em;
 }
 
 .previous-work h2::nth-child(2) {
@@ -317,6 +320,11 @@ nav .logo li a {
   padding: 1.5em;
   margin: 1em;
   border-bottom: 3px #007bff solid;
+  /* max-width: 25%; */
+}
+
+.img-person {
+  max-width: 41vw;
 }
 
 .person p {
@@ -354,6 +362,45 @@ footer p {
   font-weight: 400;
   font-size: 1.2em;
   color: #fff;
+}
+
+footer .nav-list-footer {
+  padding: 0.8em 1em;
+}
+
+footer .nav-list-footer li {
+  color: #fff;
+  padding: 0 0 0.7em 0;
+}
+
+footer .nav-list-footer i {
+  font-size: 1.1em;
+  padding: 0 0.6em 0 0;
+}
+
+@media all and (max-width: 315px) {
+  .holder {
+    width: 7.9em;
+  }
+}
+
+@media all and (max-width: 470px) {
+  .testimonials-section h1,
+  .section-2-skills h2 {
+    font-size: 9vw;
+  }
+
+  .section-2-skills h1 {
+    font-size: 6.9vw;
+  }
+
+  .previous-work h2:first-child {
+    font-size: 9.9vw;
+  }
+
+  .services-section h1 {
+    font-size: 9.9vw;
+  }
 }
 
 @media all and (min-width: 700px) {
@@ -437,6 +484,12 @@ footer p {
     justify-content: center;
   }
 
+  .person {
+    /* max-width: 25%; */
+  }
+}
+
+@media all and (min-width: 900px) {
   .holder-testimonials {
     display: flex;
     justify-content: center;
@@ -446,7 +499,6 @@ footer p {
     max-width: 25%;
   }
 }
-
 @media all and (min-width: 1050px) {
   .container {
     display: flex;
