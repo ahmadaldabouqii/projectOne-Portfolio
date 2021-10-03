@@ -199,7 +199,7 @@ nav .logo li a {
 .right img {
   display: inline-block;
   vertical-align: middle;
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
 }
 
@@ -346,13 +346,17 @@ cite {
 }
 
 footer {
-  background-color: rgba(255, 103, 68, 0.91);
-  padding: 3em;
+  background-color: black;
+  padding: 1em;
   text-align: center;
 }
 
 .social {
   line-height: 4;
+}
+
+footer a {
+  color: #fff;
 }
 
 footer i {
@@ -364,6 +368,7 @@ footer p {
   word-spacing: 0.2em;
   font-weight: 400;
   font-size: 1.2em;
+  color: #fff;
 }
 
 @media all and (min-width: 700px) {
@@ -425,7 +430,7 @@ footer p {
 
 @media all and (min-width: 850px) {
   header {
-    position: fixed;
+    position: sticky;
     box-shadow: 0 5px 10px rgb(17 17 17 / 30%);
   }
 
