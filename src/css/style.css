@@ -64,7 +64,7 @@ nav .logo li a {
 
 .section-1-img {
   height: 45vh;
-  background-image: url(../img/img-section.jpg);
+  background-image: url(../img/img-section.avif);
   background-size: cover;
   background-position: inherit;
   display: flex;
@@ -193,13 +193,11 @@ nav .logo li a {
 .right {
   float: left;
   padding-right: 0.625rem;
-  /* padding-left: 0.625rem; */
 }
 
 .right img {
   display: inline-block;
   vertical-align: middle;
-  /* max-width: 100%; */
   height: auto;
 }
 
@@ -329,14 +327,6 @@ nav .logo li a {
 
 .person p {
   font-size: 1.3em;
-}
-
-.img-holder {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin: 0 auto 1em auto;
 }
 
 cite {
