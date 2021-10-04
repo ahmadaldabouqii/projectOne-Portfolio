@@ -15,15 +15,16 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="header">
+        <nav class="nav">
             <ul class="logo">
                 <li> <a href="./index.html"> &lt;AD /&gt; </a> </li>
             </ul>
             <ul class="nav-list">
-                <li><i class="fa fa-envelope icon"></i>aldabouqiahmad@gmail.com</li>
-                <li><i class="fa fa-light fa-phone icon"></i>+962777753269</li>
-                <li><i class="fa fa-light fa-location-dot"></i> Amman|Jordan</li>
+                <li><a class="nav__link" href="#section--2" rel="noreferrer" aria-label="Experience">Experience</a></li>
+                <li><a class="nav__link" href="#section--3" rel="noreferrer" aria-label="Projects">Projects</a></li>
+                <li><a class="nav__link" href="#section--4" rel="noreferrer" aria-label="Services">Services</a></li>
+                <li><a class="nav__link" href="#section--5" rel="noreferrer" aria-label="Testimonials">Testimonials</a></li>
             </ul>
         </nav>
     </header>
@@ -35,7 +36,8 @@
                 <h2>Full-stack Developer.</h2>
             </div>
         </section>
-        <section class="section-2-skills">
+        
+        <section class="section-2-skills" id="section--2">
             <h1>My Experience</h1>
             <h2>Specialist in need. Generalist at heart.</h2>
             <div class="row">
@@ -71,7 +73,7 @@
             </div>
         </section>
 
-        <section class="previous-work">
+        <section class="previous-work" id="section--3">
             <h2>&lt;Projects /&gt;</h2>
             <h2>Here are few of my previous projects.</h2>
             <div class="container">
@@ -122,7 +124,7 @@
             </div>
         </section>
 
-        <section class="services-section">
+        <section class="services-section" id="section--4">
             <h1>What can i do?</h1>
             <div class="services">
               <div class="holder">
@@ -143,7 +145,7 @@
             </div>
         </section>
 
-        <section class="testimonials-section">
+        <section class="testimonials-section" id="section--5">
             <h1>Testimonials</h1>
         <div class="holder-testimonials">
             <div class="person">
@@ -179,5 +181,7 @@
         </ul>
         <p>Copyright © 2021 | Ahmad Al-Dabouqi</p>
     </footer>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>
