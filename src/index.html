@@ -14,174 +14,172 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    <header class="header">
-        <nav class="nav">
-            <ul class="logo">
-                <li> <a href="./index.html"> &lt;AD /&gt; </a> </li>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <ul class="logo">
+                    <li> <a href="./index.html"> &lt;AD /&gt; </a> </li>
+                </ul>
+                <ul class="nav-list">
+                    <li><a class="nav__link" href="#section--2" rel="noreferrer" aria-label="Experience">Experience</a></li>
+                    <li><a class="nav__link" href="#section--3" rel="noreferrer" aria-label="Projects">Projects</a></li>
+                    <li><a class="nav__link" href="#section--4" rel="noreferrer" aria-label="Services">Services</a></li>
+                    <li><a class="nav__link" href="#section--5" rel="noreferrer" aria-label="Testimonials">Testimonials</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="section-1-img">
+                <div class="box">
+                    <h1>Hey, I'm Ahmad</h1>
+                    <h2>Full-stack Developer.</h2>
+                </div>
+            </section>
+            
+            <section class="section-2-skills" id="section--2">
+                <h1>My Experience</h1>
+                <h2>Specialist in need. Generalist at heart.</h2>
+                <div class="row">
+                    <div class="frontEnd-skills">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <h3>Front-end</h3>
+                        <ul>
+                            <li>html(5)</li>
+                            <li>css(3)</li>
+                            <li>Javascript</li>
+                            <li>Bootstrap</li>
+                            <li>Semantics-UI</li>
+                        </ul>
+                    </div>
+                    <div class="backend-skills">
+                        <i class="fa-solid fa-server"></i>
+                        <h3>Back-end</h3>
+                        <ul>
+                            <li>SQL</li>
+                            <li>Firebase</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                    <div class="tools-skills">
+                        <i class="fa-solid fa-star"></i>
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Git || Github</li>
+                            <li>vs code || Atom</li>
+                            <li>adobe</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="previous-work" id="section--3">
+                <h2>&lt;Projects /&gt;</h2>
+                <h2>Here are few of my previous projects.</h2>
+                <div class="container">
+                    <img src="./img/vaccine.avif" alt="vaccine-website">
+                    <div class="left">
+                        <h3>Vaccines Registration</h3>
+                        <p class="platform">Web</p>
+                        <p class="icons">
+                            <i class="fa-solid fa-desktop"></i>
+                            <i class="fa-solid fa-tablet-screen-button"></i>
+                            <i class="fa-solid fa-mobile-button"></i>
+                        </p>
+                        <p class="description">
+                            Informative website for registration to take one of the covid-19 Vaccines. The admin can cancel any order and show all orders.
+                        </p>
+                        <a class="btn" rel="noreferrer" target="_blank" href="https://leicester-team.github.io/vaccines-regesiteration/">Visit Website</a>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="./img/bankist.avif" alt="bankist-app">
+                    <div class="left">
+                        <h3>Bankist App</h3>
+                        <p class="platform">Web</p>
+                        <p class="icons">
+                            <i class="fa-solid fa-desktop"></i>
+                            <i class="fa-solid fa-tablet-screen-button"></i>
+                            <i class="fa-solid fa-mobile-button"></i>
+                        </p>
+                        <p class="description">
+                            a Minimalist Banking app using Vanilla Js with the functionality of users: loan, balance, and transfers.</p>
+                        <a class="btn" rel="noreferrer" target="_blank" href="https://ahmadaldabouqii.github.io/Bankist_App/">Visit Website</a>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="./img/pig-game.avif" alt="pig-game">
+                    <div class="left">
+                        <h3>Pig Game</h3>
+                        <p class="platform">Web</p>
+                        <p class="icons">
+                            <i class="fa-solid fa-desktop"></i>
+                            <i class="fa-solid fa-tablet-screen-button"></i>
+                            <i class="fa-solid fa-mobile-button"></i>
+                        </p>
+                        <p class="description">
+                            Pig game is a simple dice roll-based game. This game is fully in javascript and uses some images.</p>
+                        <a class="btn" rel="noreferrer" target="_blank" href="https://ahmadaldabouqii.github.io/Pig_Game/">Visit Website</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services-section" id="section--4">
+                <h1>What can i do?</h1>
+                <div class="services">
+                <div class="holder">
+                    <i class="fa fa-edit"></i>
+                    <br />
+                    <h2>Web Development</h2>
+                </div>
+                <div class="holder">
+                    <i class="fa fa-paint-brush"></i>
+                    <br />
+                    <h2>Web Design</h2>
+                </div>
+                <div class="holder">
+                    <i class="fa-solid fa-mobile-button"></i>
+                    <br />
+                    <h2>Mobile Development</h2>
+                </div>
+                </div>
+            </section>
+
+            <section class="testimonials-section" id="section--5">
+                <h1>Testimonials</h1>
+            <div class="holder-testimonials">
+                <div class="person">
+                    <img src="./img/mark.avif" alt="Mark Zuckerberg" class="img-person">
+                    <p>People don't care about what you say, they care about what you build.</p>
+                    <cite> - Mark Zuckerberg</cite>
+                </div>
+                <div class="person">
+                    <img src="./img/Bill-Gates.avif" alt="Bill Gates" class="img-person">
+                    <p>The computer was born to solve problems that did not exist before.</p>
+                    <cite> - Bill Gates</cite>
+                </div>
+                <div class="person">
+                    <img src="./img/linus.avif" alt="Linus Torvalds" class="img-person">
+                    <p>Bad programmers worry about the code. Good programmers worry about data structures and their relationships.</p>
+                    <cite> - Linus Torvalds</cite>
+                </div>
+            </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="social">
+                <a href="https://github.com/ahmadaldabouqii" target="_blank" rel="noreferrer" aria-label="github"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ahmad-aldabouqi/" rel="noreferrer" target="_blank" aria-label="linkedin"><i class="fab fa-linkedin"></i></a>
+                <a href="https://twitter.com/Ahmad_AlDabouqi" rel="noreferrer" target="_blank" aria-label="twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/ahmad_aldabouqi/" rel="noreferrer" target="_blank" aria-label="instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+            <ul class="nav-list-footer">
+                <li><i class="fa fa-envelope icon"></i>aldabouqiahmad@gmail.com</li>
+                <li><i class="fa fa-light fa-phone icon"></i>+962777753269</li>
+                <li><i class="fa fa-light fa-location-dot"></i> Amman|Jordan</li>
             </ul>
-            <ul class="nav-list">
-                <li><a class="nav__link" href="#section--2" rel="noreferrer" aria-label="Experience">Experience</a></li>
-                <li><a class="nav__link" href="#section--3" rel="noreferrer" aria-label="Projects">Projects</a></li>
-                <li><a class="nav__link" href="#section--4" rel="noreferrer" aria-label="Services">Services</a></li>
-                <li><a class="nav__link" href="#section--5" rel="noreferrer" aria-label="Testimonials">Testimonials</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section class="section-1-img">
-            <div class="box">
-                <h1>Hey, I'm Ahmad</h1>
-                <h2>Full-stack Developer.</h2>
-            </div>
-        </section>
-        
-        <section class="section-2-skills" id="section--2">
-            <h1>My Experience</h1>
-            <h2>Specialist in need. Generalist at heart.</h2>
-            <div class="row">
-                <div class="frontEnd-skills">
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <h3>Front-end</h3>
-                    <ul>
-                        <li>html(5)</li>
-                        <li>css(3)</li>
-                        <li>Javascript</li>
-                        <li>Bootstrap</li>
-                        <li>Semantics-UI</li>
-                    </ul>
-                </div>
-                <div class="backend-skills">
-                    <i class="fa-solid fa-server"></i>
-                    <h3>Back-end</h3>
-                    <ul>
-                        <li>SQL</li>
-                        <li>Firebase</li>
-                        <li>Python</li>
-                    </ul>
-                </div>
-                <div class="tools-skills">
-                    <i class="fa-solid fa-star"></i>
-                    <h3>Tools</h3>
-                    <ul>
-                        <li>Git || Github</li>
-                        <li>vs code || Atom</li>
-                        <li>adobe</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="previous-work" id="section--3">
-            <h2>&lt;Projects /&gt;</h2>
-            <h2>Here are few of my previous projects.</h2>
-            <div class="container">
-                <img src="./img/vaccine.avif" alt="vaccine-website">
-                <div class="left">
-                    <h3>Vaccines Registration</h3>
-                    <p class="platform">Web</p>
-                    <p class="icons">
-                        <i class="fa-solid fa-desktop"></i>
-                        <i class="fa-solid fa-tablet-screen-button"></i>
-                        <i class="fa-solid fa-mobile-button"></i>
-                    </p>
-                    <p class="description">
-                        Informative website for registration to take one of the covid-19 Vaccines. The admin can cancel any order and show all orders.
-                    </p>
-                    <a class="btn" rel="noreferrer" target="_blank" href="https://leicester-team.github.io/vaccines-regesiteration/">Visit Website</a>
-                </div>
-            </div>
-            <div class="container">
-                <img src="./img/bankist.avif" alt="bankist-app">
-                <div class="left">
-                    <h3>Bankist App</h3>
-                    <p class="platform">Web</p>
-                    <p class="icons">
-                        <i class="fa-solid fa-desktop"></i>
-                        <i class="fa-solid fa-tablet-screen-button"></i>
-                        <i class="fa-solid fa-mobile-button"></i>
-                    </p>
-                    <p class="description">
-                        a Minimalist Banking app using Vanilla Js with the functionality of users: loan, balance, and transfers.</p>
-                    <a class="btn" rel="noreferrer" target="_blank" href="https://ahmadaldabouqii.github.io/Bankist_App/">Visit Website</a>
-                </div>
-            </div>
-            <div class="container">
-                <img src="./img/pig-game.avif" alt="pig-game">
-                <div class="left">
-                    <h3>Pig Game</h3>
-                    <p class="platform">Web</p>
-                    <p class="icons">
-                        <i class="fa-solid fa-desktop"></i>
-                        <i class="fa-solid fa-tablet-screen-button"></i>
-                        <i class="fa-solid fa-mobile-button"></i>
-                    </p>
-                    <p class="description">
-                        Pig game is a simple dice roll-based game. This game is fully in javascript and uses some images.</p>
-                    <a class="btn" rel="noreferrer" target="_blank" href="https://ahmadaldabouqii.github.io/Pig_Game/">Visit Website</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="services-section" id="section--4">
-            <h1>What can i do?</h1>
-            <div class="services">
-              <div class="holder">
-                <i class="fa fa-edit"></i>
-                <br />
-                <h2>Web Development</h2>
-              </div>
-              <div class="holder">
-                <i class="fa fa-paint-brush"></i>
-                <br />
-                <h2>Web Design</h2>
-              </div>
-              <div class="holder">
-                <i class="fa-solid fa-mobile-button"></i>
-                <br />
-                <h2>Mobile Development</h2>
-              </div>
-            </div>
-        </section>
-
-        <section class="testimonials-section" id="section--5">
-            <h1>Testimonials</h1>
-        <div class="holder-testimonials">
-            <div class="person">
-                <img src="./img/mark.avif" alt="Mark Zuckerberg" class="img-person">
-                <p>People don't care about what you say, they care about what you build.</p>
-                <cite> - Mark Zuckerberg</cite>
-            </div>
-            <div class="person">
-                <img src="./img/Bill-Gates.avif" alt="Bill Gates" class="img-person">
-                <p>The computer was born to solve problems that did not exist before.</p>
-                <cite> - Bill Gates</cite>
-            </div>
-            <div class="person">
-                <img src="./img/linus.avif" alt="Linus Torvalds" class="img-person">
-                <p>Bad programmers worry about the code. Good programmers worry about data structures and their relationships.</p>
-                <cite> - Linus Torvalds</cite>
-            </div>
-        </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="social">
-            <a href="https://github.com/ahmadaldabouqii" target="_blank" rel="noreferrer" aria-label="github"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/ahmad-aldabouqi/" rel="noreferrer" target="_blank" aria-label="linkedin"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/Ahmad_AlDabouqi" rel="noreferrer" target="_blank" aria-label="twitter"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/ahmad_aldabouqi/" rel="noreferrer" target="_blank" aria-label="instagram"><i class="fab fa-instagram"></i></a>
-        </div>
-        <ul class="nav-list-footer">
-            <li><i class="fa fa-envelope icon"></i>aldabouqiahmad@gmail.com</li>
-            <li><i class="fa fa-light fa-phone icon"></i>+962777753269</li>
-            <li><i class="fa fa-light fa-location-dot"></i> Amman|Jordan</li>
-        </ul>
-        <p>Copyright © 2021 | Ahmad Al-Dabouqi</p>
-    </footer>
-
-    <script src="./js/script.js"></script>
-</body>
+            <p>Copyright © 2021 | Ahmad Al-Dabouqi</p>
+        </footer>
+    </body>
 </html>
