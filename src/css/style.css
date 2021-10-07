@@ -162,9 +162,8 @@ nav .logo li a {
 /* <-- section 3 --> */
 
 .previous-work {
-  padding: 6em 4em 3em;
+  padding: 3em 4em 0 3em;
   text-align: center;
-  padding-bottom: 0;
 }
 
 .previous-work h2:first-child,
@@ -214,7 +213,7 @@ nav .logo li a {
   line-height: 1.4;
   margin-top: 0;
   margin-bottom: 0.5rem;
-  font-weight: 900;
+  font-weight: 500;
   font-size: 1.3rem;
 }
 
@@ -242,7 +241,6 @@ nav .logo li a {
 
 .description {
   color: rgb(115, 129, 130);
-  font-weight: 500;
   font-size: 1.2em;
   margin-bottom: 1.8em;
   line-height: 1.6;
@@ -324,20 +322,26 @@ nav .logo li a {
 .person {
   text-align: center;
   line-height: 1.5;
-  background-color: #e9eff5;
+  background-color: #e9eaeb;
   border-radius: 2em;
-  padding: 1.5em;
+  padding: 1.5em 1.5em 0 1.5em;
   margin: 1em;
-  border-bottom: 3px #007bff solid;
+  border-bottom: 2.5px #3999ff solid;
   /* max-width: 25%; */
 }
 
-.person:nth-child(2) img {
+.person img {
+  width: 140px;
+  height: 140px;
+}
+
+.person:nth-child(1) img {
   border-radius: 50%;
 }
 
 .person p {
-  font-size: 1.3em;
+  font-size: 1.1em;
+  margin-top: 0.6em;
 }
 
 cite {
@@ -419,7 +423,7 @@ footer .nav-list-footer i {
 
   .left h3 {
     font-weight: 500;
-    font-size: 3vw;
+    font-size: 3.5vw;
   }
 
   .testimonials-section img {
@@ -551,7 +555,19 @@ footer .nav-list-footer i {
   }
 
   .person {
-    max-width: 25%;
+    max-width: 20%;
+  }
+
+  .person img {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media all and (max-width: 1050px) {
+  .container:nth-of-type(2),
+  .container:nth-of-type(3) {
+    margin: 10em auto;
   }
 }
 
