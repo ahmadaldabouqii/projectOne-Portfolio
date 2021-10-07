@@ -79,7 +79,6 @@ nav .logo li a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 1em;
   align-items: center;
   box-sizing: border-box;
 }
@@ -198,7 +197,7 @@ nav .logo li a {
 
 .container:nth-of-type(2),
 .container:nth-of-type(3) {
-  margin: 10em auto;
+  margin: 3em auto;
 }
 
 .container img {
@@ -427,8 +426,8 @@ footer .nav-list-footer i {
   }
 
   .testimonials-section img {
-    width: 120px;
-    height: 120px;
+    width: 115px;
+    height: 115px;
   }
 
   .person {
@@ -614,7 +613,7 @@ footer .nav-list-footer i {
 
 @media all and (min-width: 1290px) {
   .section-1-img {
-    height: 92vh;
+    height: 91.94vh;
   }
 }
 
