@@ -423,8 +423,8 @@ footer .nav-list-footer i {
   }
 
   .testimonials-section img {
-    width: 130px;
-    height: 130px;
+    width: 120px;
+    height: 120px;
   }
 
   .person {
@@ -439,7 +439,7 @@ footer .nav-list-footer i {
   .services-section h1,
   .testimonials-section h1 {
     margin-bottom: 0.5em;
-    font-size: 2.5em;
+    font-size: 2.8em;
   }
 
   .previous-work h2:nth-child(2) {
