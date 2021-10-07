@@ -432,7 +432,15 @@ footer .nav-list-footer i {
   }
 
   .holder {
-    padding: 0.4em 2em;
+    padding: 0.9em 3.5em;
+  }
+
+  .previous-work h2:nth-child(1) {
+    margin-bottom: 0.5em;
+  }
+
+  .previous-work h2:nth-child(2) {
+    font-size: 2.6vw;
   }
 }
 
