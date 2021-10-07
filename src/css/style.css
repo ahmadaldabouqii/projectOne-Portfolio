@@ -72,7 +72,7 @@ nav .logo li a {
 
 .section-1-img {
   height: 45vh;
-  background-image: url(../img/img-section.avif);
+  background-image: url(../assets/img-section.avif);
   background-size: cover;
   background-position: inherit;
   display: flex;
@@ -332,8 +332,8 @@ nav .logo li a {
   /* max-width: 25%; */
 }
 
-.img-person {
-  max-width: 41vw;
+.person:nth-child(2) img {
+  border-radius: 50%;
 }
 
 .person p {
@@ -408,6 +408,31 @@ footer .nav-list-footer i {
 
   .services-section h1 {
     font-size: 9.9vw;
+  }
+}
+
+@media all and (max-width: 500px) {
+  body {
+    font-size: 2vw;
+    /* font-weight: 300; */
+  }
+
+  .left h3 {
+    font-weight: 500;
+    font-size: 3vw;
+  }
+
+  .testimonials-section img {
+    width: 130px;
+    height: 130px;
+  }
+
+  .person {
+    margin: 4em;
+  }
+
+  .holder {
+    padding: 0.4em 2em;
   }
 }
 
