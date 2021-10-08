@@ -588,6 +588,10 @@ footer .nav-list-footer i {
   }
 
   .left {
+    padding: 0em 3em 0 0;
+  }
+
+  .container:nth-of-type(2) .left {
     padding: 0em 3em;
   }
 
