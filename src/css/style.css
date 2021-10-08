@@ -330,7 +330,7 @@ nav .logo li a {
   padding: 1.5em 1.5em 0 1.5em;
   margin: 1em;
   border-bottom: 2.5px #3999ff solid;
-  /* max-width: 25%; */
+  box-shadow: 0 5px 10px rgb(17 17 17 / 30%);
 }
 
 .person img {
