@@ -1,23 +1,44 @@
 html {
   font-family: rubik, sans-serif;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
   overflow-x: hidden;
-  background-color: #eef0ff;
-  color: #111;
+  background-color: #f3f3f3;
+  color: #444;
 }
 
 header {
-  background-color: #e3e3e3;
   width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 nav {
   font-weight: 800;
   width: 100vw;
   font-size: 1.1em;
+}
+
+.sticky {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 0 50px #777272;
+}
+
+.section {
+  padding: 5em 3em;
+  border-top: 1px solid #ddd;
+  transition: transform 1s, opacity 1s;
+}
+
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
 }
 
 .nav-list {
@@ -70,12 +91,9 @@ nav .logo li a {
 
 /* <-- sections --> */
 
-main {
-  background-color: #eef0ff;
-}
-
 .section-1-img {
-  height: 45vh;
+  height: 100vh;
+  width: 100vw;
   background-image: url(../assets/img-section.avif);
   background-size: cover;
   background-position: inherit;
@@ -106,36 +124,31 @@ main {
 .section-2-skills {
   display: flex;
   flex-direction: column;
-  background-color: #0e1878;
   justify-content: end;
-  padding: 4em 5.6em 0 5.6em;
   box-sizing: border-box;
 }
 
 .section-2-skills h1 {
   font-size: 2.1em;
   line-height: 2;
-  font-weight: 900;
-  color: #fff;
+  font-weight: 700;
+  color: rgb(255, 105, 69);
   text-align: center;
 }
 
 .section-2-skills h2 {
-  font-size: 1.4em;
-  color: #fff;
   text-align: center;
   font-weight: 400;
 }
 
 .row i {
-  color: rgb(255, 138, 89);
+  color: #ff585f;
   font-size: 4em;
   margin: 0 0 0.1em 0;
 }
 
 .row h3 {
-  color: #fff;
-  font-weight: 900;
+  font-weight: 600;
   font-size: 1.5em;
 }
 
@@ -158,9 +171,7 @@ main {
 .frontEnd-skills ul li,
 .backend-skills ul li,
 .tools-skills ul li {
-  color: #bbd2ff;
   font-family: 'Maven pro', sans-serif;
-  font-weight: 500;
   font-size: 1.1em;
   line-height: 1.8;
 }
@@ -168,11 +179,7 @@ main {
 /* <-- section 3 --> */
 
 .previous-work {
-  padding: 23em 4em 0 3em;
   text-align: center;
-  background: url(../assets/midnight-wave.svg);
-  background-repeat: no-repeat;
-  margin-top: -0.7px;
 }
 
 .previous-work h2:first-child,
@@ -293,9 +300,7 @@ main {
 }
 
 .services-section {
-  margin-top: -5.81em;
   text-align: center;
-  background-color: #0e1878;
 }
 
 .services {
@@ -330,9 +335,6 @@ main {
 .testimonials-section {
   padding: 4.2em 3em;
   text-align: center;
-  background: url(../assets/midnight-wave.svg) bottom/100% auto;
-  background-repeat: no-repeat;
-  background-position: top;
   margin-top: -0.8px;
 }
 
@@ -372,15 +374,15 @@ cite {
 }
 
 footer {
-  height: 50vh;
+  padding-top: 4em !important;
+  padding-bottom: 0 !important;
   text-align: center;
-  background: url(../assets/tops.svg) bottom/100% auto;
-  background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: end;
+  background-color: #2a2b2f;
+  color: #fff;
 }
 
 .social {
@@ -388,11 +390,11 @@ footer {
 }
 
 footer a {
-  color: #fff;
   padding: 0.2em;
 }
 
 footer i {
+  color: #fff;
   font-size: 1.5em;
   padding: 0 0.2em 0 0;
 }
@@ -401,7 +403,6 @@ footer p {
   word-spacing: 0.2em;
   font-weight: 400;
   font-size: 1.2em;
-  color: #fff;
   padding-bottom: 3.8em;
 }
 
@@ -410,7 +411,6 @@ footer .nav-list-footer {
 }
 
 footer .nav-list-footer li {
-  color: #fff;
   padding: 0 0 0.7em 0;
   font-size: 1.2em;
 }
@@ -558,11 +558,6 @@ footer .nav-list-footer i {
 }
 
 @media all and (min-width: 850px) {
-  header {
-    position: sticky;
-    box-shadow: 0 5px 10px rgb(17 17 17 / 30%);
-  }
-
   .previous-work h2:first-child {
     font-size: 3em;
     font-weight: 900;
@@ -639,9 +634,9 @@ footer .nav-list-footer i {
 }
 
 @media all and (min-width: 900px) {
-  .section-1-img {
+  /* .section-1-img {
     height: 91.94vh;
-  }
+  } */
 }
 
 @media all and (min-width: 1400px) {
@@ -659,16 +654,4 @@ footer .nav-list-footer i {
     margin: 0 0 0 33em;
     text-align: center;
   }
-}
-
-.photo {
-  width: 100%;
-  margin: 0;
-  padding-top: 23.9em;
-  background: url(../assets/tops.svg) bottom/100% auto;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: -2px;
-  margin-bottom: -5.81em;
-  padding-bottom: 0;
 }
