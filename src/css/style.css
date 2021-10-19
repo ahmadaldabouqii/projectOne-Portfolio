@@ -21,7 +21,6 @@ header {
 nav {
   font-weight: 800;
   width: 100vw;
-  font-size: 1.1em;
 }
 
 .sticky {
@@ -59,11 +58,6 @@ nav .nav-list li {
 
 nav .nav-list a {
   width: 100%;
-}
-
-nav .nav-list li:hover {
-  background-color: rgb(238, 198, 124);
-  box-shadow: 0px 0.4em 0 0px orange;
 }
 
 .logo {
@@ -479,12 +473,6 @@ footer .nav-list-footer i {
   }
 }
 
-@media all and (max-width: 800px) {
-  .previous-work {
-    padding: 12em 4em 0 3em;
-  }
-}
-
 @media all and (min-width: 700px) {
   nav {
     display: flex;
@@ -499,7 +487,7 @@ footer .nav-list-footer i {
     display: flex;
     flex-direction: row;
     width: 60%;
-    justify-content: center;
+    justify-content: space-evenly;
     font-size: 1.2em;
     align-items: baseline;
     text-align: center;
@@ -520,15 +508,13 @@ footer .nav-list-footer i {
   nav .nav-list li {
     font-weight: 700;
     display: flex;
-    flex-direction: row;
-    width: 50%;
-    justify-content: center;
     font-size: 1.2em;
     align-items: center;
     text-align: center;
+    align-content: center;
     padding: 0;
-    height: 91.5%;
     cursor: pointer;
+    height: 100%;
   }
 
   .section-2-skills h1 {
@@ -601,10 +587,6 @@ footer .nav-list-footer i {
 }
 
 @media all and (min-width: 1050px) {
-  .nav-list {
-    margin: 0 8em 0 0;
-  }
-
   .container {
     display: flex;
     flex-direction: row-reverse;
