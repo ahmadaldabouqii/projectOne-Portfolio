@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Ahmad Aldabouqi" />
     <meta
       name="description"
@@ -12,7 +13,6 @@
       name="keywords"
       content="ahmadaldabouqi, Ahmad Aldabouqi, HTML, CSS, JavaScript, Python, Bootstratp, SQL, Firebase, SEO, Linux, Ubuntu"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,11 +27,11 @@
       referrerpolicy="no-referrer"
     />
     <link rel="shortcut icon" href="./assets/title-icon.png" />
-    <title>Ahmad Aldabouqi | Web developer</title>
+    <title>Projects | previous work</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
   </head>
-
   <body>
     <header id="header">
       <nav class="nav">
@@ -42,7 +42,7 @@
           <li>
             <a
               class="nav__link"
-              href="#section--2"
+              href="./index.html#section--2"
               rel="noreferrer"
               target="_self"
               aria-label="Experience"
@@ -62,7 +62,7 @@
           <li>
             <a
               class="nav__link"
-              href="#section--4"
+              href="./index.html#section--4"
               rel="noreferrer"
               target="_self"
               aria-label="Services"
@@ -72,7 +72,7 @@
           <li>
             <a
               class="nav__link"
-              href="#section--5"
+              href="./index.html#section--5"
               rel="noreferrer"
               target="_self"
               aria-label="Testimonials"
@@ -89,107 +89,104 @@
               >Contact Me</a
             >
           </li>
-          <!-- <li class="nav__item">
-            <a class="nav__link" id="dark">Dark Mode</a>
-          </li> -->
         </ul>
       </nav>
-      <section class="section-1-img">
-        <div class="box">
-          <h1>Hey, I'm Ahmad</h1>
-          <h2>Full-stack Developer.</h2>
-        </div>
-      </section>
     </header>
 
     <main>
-      <section class="section section-2-skills" id="section--2">
-        <h1>My Experience</h1>
-        <h2>Specialist in need. Generalist at heart.</h2>
-        <div class="row">
-          <div class="frontEnd-skills">
-            <i class="fa-solid fa-laptop-code"></i>
-            <h3>Front-end</h3>
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JAVASCRIPT</li>
-              <li>BOOTSTRAP</li>
-              <li>SEMANTIC-UI</li>
-            </ul>
-          </div>
-          <div class="backend-skills">
-            <i class="fa-solid fa-server"></i>
-            <h3>Back-end</h3>
-            <ul>
-              <li>SQL</li>
-              <li>FIREBASE</li>
-              <li>PYTHON</li>
-            </ul>
-          </div>
-          <div class="tools-skills">
-            <i class="fa-solid fa-star"></i>
-            <h3>Tools</h3>
-            <ul>
-              <li>GIT || GITHUB</li>
-              <li>VS CODE || ATOM</li>
-              <li>ADOBE</li>
-            </ul>
+      <section class="section previous-work" id="section--3">
+        <h2>&lt;Projects /&gt;</h2>
+        <h2>Here are few of my previous projects.</h2>
+        <div class="container">
+          <img src="./assets/aronWebApp.png" alt="quiz-webapp" />
+          <div class="left">
+            <h3>Aron Quiz WEB APP</h3>
+            <p class="platform">Web</p>
+            <p class="icons">
+              <i class="fa-solid fa-desktop"></i>
+              <i class="fa-solid fa-tablet-screen-button"></i>
+              <i class="fa-solid fa-mobile-button"></i>
+            </p>
+            <p class="description">
+              a Minimalist Quiz app using Vanilla Js with the functionality of
+              users: take quiz, register, login, logout, tutorials and More!
+            </p>
+            <a
+              class="btn"
+              rel="noreferrer"
+              target="_blank"
+              href="https://ahmadaldabouqii.github.io/Bankist_App/"
+              >Visit Website</a
+            >
           </div>
         </div>
-      </section>
-      <section class="section services-section" id="section--4">
-        <h1>What can i do?</h1>
-        <div class="services">
-          <div class="holder">
-            <i class="fa fa-edit"></i>
-            <br />
-            <h2>Web Development</h2>
-          </div>
-          <div class="holder">
-            <i class="fa fa-paint-brush"></i>
-            <br />
-            <h2>Web Design</h2>
-          </div>
-          <div class="holder">
-            <i class="fa-solid fa-mobile-button"></i>
-            <br />
-            <h2>Mobile Development</h2>
+        <div class="container">
+          <img src="./assets/vaccine.avif" alt="vaccine-website" />
+          <div class="left">
+            <h3>Vaccines Registration</h3>
+            <p class="platform">Web</p>
+            <p class="icons">
+              <i class="fa-solid fa-desktop"></i>
+              <i class="fa-solid fa-tablet-screen-button"></i>
+              <i class="fa-solid fa-mobile-button"></i>
+            </p>
+            <p class="description">
+              Informative website for registration to take one of the covid-19
+              Vaccines. The admin can cancel any order and show all orders.
+            </p>
+            <a
+              class="btn"
+              rel="noreferrer"
+              target="_blank"
+              href="https://leicester-team.github.io/vaccines-regesiteration/"
+              >Visit Website</a
+            >
           </div>
         </div>
-      </section>
-
-      <section class="section testimonials-section" id="section--5">
-        <h1>Testimonials</h1>
-        <div class="holder-testimonials">
-          <div class="person">
-            <img src="./assets/msallam.jpg" alt="musallam" class="img-person" />
-            <p>
-              A hardworking man, pays attention to the smallest details of work,
-              helps those around him, at the expense of his time, enthusiastic
-              to work with him.
+        <div class="container">
+          <img src="./assets/bankist.avif" alt="bankist-app" />
+          <div class="left">
+            <h3>Bankist App</h3>
+            <p class="platform">Web</p>
+            <p class="icons">
+              <i class="fa-solid fa-desktop"></i>
+              <i class="fa-solid fa-tablet-screen-button"></i>
+              <i class="fa-solid fa-mobile-button"></i>
             </p>
-            <cite> - Msallam Daas</cite>
+            <p class="description">
+              a Minimalist Banking app using Vanilla Js with the functionality
+              of users: loan, balance, and transfers.
+            </p>
+            <a
+              class="btn"
+              rel="noreferrer"
+              target="_blank"
+              href="https://ahmadaldabouqii.github.io/Bankist_App/"
+              >Visit Website</a
+            >
           </div>
-          <div class="person">
-            <img src="./assets/azmi.png" alt="azmi" class="img-person" />
-            <p>
-              A wonderful, efficient man with a love of learning and
-              problem-solving ability.
+        </div>
+        <div class="container">
+          <img src="./assets/pig-game.avif" alt="pig-game" />
+          <div class="left">
+            <h3>Pig Game</h3>
+            <p class="platform">Web</p>
+            <p class="icons">
+              <i class="fa-solid fa-desktop"></i>
+              <i class="fa-solid fa-tablet-screen-button"></i>
+              <i class="fa-solid fa-mobile-button"></i>
             </p>
-            <cite> - Azmi Al Tammam</cite>
-          </div>
-          <div class="person">
-            <img
-              src="./assets/abdulaziz.png"
-              alt="Abdulaziz Quranfoleh"
-              class="img-person"
-            />
-            <p>
-              Bad programmers worry about the code. Good programmers worry about
-              data structures and their relationships.
+            <p class="description">
+              Pig game is a simple dice roll-based game. This game is fully in
+              javascript and uses some images.
             </p>
-            <cite> - Abdulaziz Quranfoleh</cite>
+            <a
+              class="btn"
+              rel="noreferrer"
+              target="_blank"
+              href="https://ahmadaldabouqii.github.io/Pig_Game/"
+              >Visit Website</a
+            >
           </div>
         </div>
       </section>
@@ -234,6 +231,6 @@
       <p>Copyright © 2021 | Ahmad Al-Dabouqi</p>
     </footer>
 
-    <script src="./js/script.js"></script>
+    <script src="./js/projects.js"></script>
   </body>
 </html>

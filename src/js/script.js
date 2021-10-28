@@ -16,7 +16,6 @@ const section_1_observer = new IntersectionObserver(headerSticky, {
 });
 section_1_observer.observe(section_1);
 
-const allSections = document.querySelectorAll('.section');
 const revealSection = function (entries, observer) {
   if (!entries[0].isIntersecting) return;
   entries[0].target.classList.remove('section--hidden');
@@ -28,7 +27,7 @@ const sectionObserver = new IntersectionObserver(revealSection, {
   threshold: 0.15,
 });
 
-allSections.forEach(section => {
+document.querySelectorAll('.section').forEach(section => {
   sectionObserver.observe(section);
   section.classList.add('section--hidden');
 });
@@ -46,3 +45,20 @@ function handler(e) {
 
 nav.addEventListener('mouseover', handler.bind(0.5));
 nav.addEventListener('mouseout', handler.bind(1));
+
+// document.getElementById('dark').addEventListener('click', e => {
+//   document.querySelector('body').style.backgroundColor = '#444';
+//   document
+//     .querySelectorAll('.nav__link')
+//     .forEach(link => (link.style.color = 'White'));
+//   nav.style.backgroundColor = '#444';
+
+//   document.querySelectorAll('.row').forEach(box => (box.style.color = 'White'));
+//   document
+//     .querySelectorAll('.left  h3')
+//     .forEach(h => (h.style.color = 'white'));
+
+//   document
+//     .querySelectorAll('.description')
+//     .forEach(tag => (tag.style.color = 'white'));
+// });

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Ahmad Aldabouqi" />
     <meta
       name="description"
@@ -12,7 +13,6 @@
       name="keywords"
       content="ahmadaldabouqi, Ahmad Aldabouqi, HTML, CSS, JavaScript, Python, Bootstratp, SQL, Firebase, SEO, Linux, Ubuntu"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,11 +27,11 @@
       referrerpolicy="no-referrer"
     />
     <link rel="shortcut icon" href="./assets/title-icon.png" />
-    <title>Ahmad Aldabouqi | Web developer</title>
+    <title>Contact Me</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/contactMe.css" />
   </head>
-
   <body>
     <header id="header">
       <nav class="nav">
@@ -89,110 +89,62 @@
               >Contact Me</a
             >
           </li>
-          <!-- <li class="nav__item">
-            <a class="nav__link" id="dark">Dark Mode</a>
-          </li> -->
         </ul>
       </nav>
-      <section class="section-1-img">
-        <div class="box">
-          <h1>Hey, I'm Ahmad</h1>
-          <h2>Full-stack Developer.</h2>
-        </div>
-      </section>
     </header>
 
     <main>
-      <section class="section section-2-skills" id="section--2">
-        <h1>My Experience</h1>
-        <h2>Specialist in need. Generalist at heart.</h2>
-        <div class="row">
-          <div class="frontEnd-skills">
-            <i class="fa-solid fa-laptop-code"></i>
-            <h3>Front-end</h3>
-            <ul>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JAVASCRIPT</li>
-              <li>BOOTSTRAP</li>
-              <li>SEMANTIC-UI</li>
-            </ul>
-          </div>
-          <div class="backend-skills">
-            <i class="fa-solid fa-server"></i>
-            <h3>Back-end</h3>
-            <ul>
-              <li>SQL</li>
-              <li>FIREBASE</li>
-              <li>PYTHON</li>
-            </ul>
-          </div>
-          <div class="tools-skills">
-            <i class="fa-solid fa-star"></i>
-            <h3>Tools</h3>
-            <ul>
-              <li>GIT || GITHUB</li>
-              <li>VS CODE || ATOM</li>
-              <li>ADOBE</li>
-            </ul>
-          </div>
+      <div class="box_content">
+        <div class="form_header">
+          <h1>Get in Touch</h1>
+          <p class="subtitle">
+            Send a general message or details of a project you'd like me to be a
+            part of and I'll get back to you as soon as possible.
+          </p>
         </div>
-      </section>
-      <section class="section services-section" id="section--4">
-        <h1>What can i do?</h1>
-        <div class="services">
-          <div class="holder">
-            <i class="fa fa-edit"></i>
-            <br />
-            <h2>Web Development</h2>
-          </div>
-          <div class="holder">
-            <i class="fa fa-paint-brush"></i>
-            <br />
-            <h2>Web Design</h2>
-          </div>
-          <div class="holder">
-            <i class="fa-solid fa-mobile-button"></i>
-            <br />
-            <h2>Mobile Development</h2>
-          </div>
-        </div>
-      </section>
-
-      <section class="section testimonials-section" id="section--5">
-        <h1>Testimonials</h1>
-        <div class="holder-testimonials">
-          <div class="person">
-            <img src="./assets/msallam.jpg" alt="musallam" class="img-person" />
-            <p>
-              A hardworking man, pays attention to the smallest details of work,
-              helps those around him, at the expense of his time, enthusiastic
-              to work with him.
-            </p>
-            <cite> - Msallam Daas</cite>
-          </div>
-          <div class="person">
-            <img src="./assets/azmi.png" alt="azmi" class="img-person" />
-            <p>
-              A wonderful, efficient man with a love of learning and
-              problem-solving ability.
-            </p>
-            <cite> - Azmi Al Tammam</cite>
-          </div>
-          <div class="person">
-            <img
-              src="./assets/abdulaziz.png"
-              alt="Abdulaziz Quranfoleh"
-              class="img-person"
+        <form action="#">
+          <div class="field">
+            <label for="name">name<code>*</code></label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your name..."
+              required
             />
-            <p>
-              Bad programmers worry about the code. Good programmers worry about
-              data structures and their relationships.
-            </p>
-            <cite> - Abdulaziz Quranfoleh</cite>
           </div>
-        </div>
-      </section>
+          <div class="field">
+            <label for="email">email<code>*</code></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email..."
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="message">General Message<code>*</code></label>
+            <textarea
+              rows="4"
+              cols="50"
+              name="message"
+              id="message"
+              placeholder="Enter your message..."
+              required
+            ></textarea>
+          </div>
+          <div class="field">
+            <input type="submit" id="submit" />
+          </div>
+        </form>
+      </div>
+
+      <div class="modal hidden">
+        <button class="close-modal">&times;</button>
+        <h1 id="user_name"></h1>
+      </div>
+      <div class="overlay hidden"></div>
     </main>
 
     <footer class="section">
@@ -234,6 +186,6 @@
       <p>Copyright © 2021 | Ahmad Al-Dabouqi</p>
     </footer>
 
-    <script src="./js/script.js"></script>
+    <script src="./js/contactMe.js"></script>
   </body>
 </html>
