@@ -138,6 +138,7 @@ code {
 
 .form_header {
   margin: 0 0 3em 0;
+  padding-right: 3.4em;
 }
 
 @media all and (min-width: 1050px) {
